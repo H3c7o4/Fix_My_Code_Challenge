@@ -2,13 +2,11 @@
 """Square module"""
 
 
-
 class square():
     """Square class"""
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
         """Init the sequence of the class"""
         for key, value in kwargs.items():
@@ -16,7 +14,7 @@ class square():
 
     def area_of_my_square(self):
         """ Area of the square """
-        return self.width * self.width
+        return self.width * self.height
 
     def PerimeterOfMySquare(self):
         """Perimeter of the square"""
@@ -25,6 +23,7 @@ class square():
     def __str__(self):
         """String representation"""
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
 
